@@ -1,0 +1,7 @@
+{
+  "/(admin-penal)/admin/category/page": "app/(admin-penal)/admin/category/page.js",
+  "/(website)/thank-you/[orderId]/page": "app/(website)/thank-you/[orderId]/page.js",
+  "/(website)/page": "app/(website)/page.js",
+  "/(admin-penal)/admin/product/page": "app/(admin-penal)/admin/product/page.js",
+  "/(admin-penal)/admin/product/edit/[edit_id]/page": "app/(admin-penal)/admin/product/edit/[edit_id]/page.js"
+}
