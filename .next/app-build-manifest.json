@@ -22,48 +22,11 @@
       "static/css/app/(website)/layout.css",
       "static/chunks/app/(website)/layout.js"
     ],
-    "/(website)/store/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(website)/store/layout.css",
-      "static/chunks/app/(website)/store/layout.js"
-    ],
-    "/(website)/store/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/store/page.js"
-    ],
-    "/(website)/store/[category_slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/store/[category_slug]/page.js"
-    ],
-    "/(admin-penal)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(admin-penal)/layout.css",
-      "static/chunks/app/(admin-penal)/layout.js"
-    ],
-    "/(admin-penal)/admin/category/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(admin-penal)/admin/category/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
-    ],
     "/(website)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(website)/page.css",
       "static/chunks/app/(website)/page.js"
-    ],
-    "/(website)/product-view/[product_id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/product-view/[product_id]/page.js"
     ],
     "/(website)/about/page": [
       "static/chunks/webpack.js",
@@ -75,36 +38,57 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(website)/profile-view/page.js"
     ],
-    "/(website)/cart/page": [
+    "/(website)/store/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(website)/cart/page.js"
+      "static/css/app/(website)/store/layout.css",
+      "static/chunks/app/(website)/store/layout.js"
     ],
-    "/(website)/checkout/page": [
+    "/(website)/store/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(website)/checkout/page.js"
+      "static/chunks/app/(website)/store/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ],
     "/(website)/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(website)/contact/page.js"
     ],
-    "/(website)/thank-you/[orderId]/page": [
+    "/(admin-penal)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(website)/thank-you/[orderId]/page.js"
+      "static/css/app/(admin-penal)/layout.css",
+      "static/chunks/app/(admin-penal)/layout.js"
     ],
-    "/(admin-penal)/admin/product/page": [
+    "/(admin-penal)/admin/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(admin-penal)/admin/product/page.js"
+      "static/chunks/app/(admin-penal)/admin/page.js"
     ],
-    "/(admin-penal)/admin/product/edit/[edit_id]/page": [
+    "/(admin-penal)/admin/category/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(admin-penal)/admin/product/edit/[edit_id]/page.css",
-      "static/chunks/app/(admin-penal)/admin/product/edit/[edit_id]/page.js"
+      "static/chunks/app/(admin-penal)/admin/category/page.js"
+    ],
+    "/(admin-penal)/admin/category/add/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(admin-penal)/admin/category/add/page.js"
+    ],
+    "/(admin-penal)/admin/color/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(admin-penal)/admin/color/page.js"
+    ],
+    "/(admin-penal)/admin/color/add/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(admin-penal)/admin/color/add/page.js"
     ]
   }
 }

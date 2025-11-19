@@ -6,7 +6,7 @@ import React from "react";
 
  async function colorTable() { 
     const allData = await getcolor();
-    const colors =  allData.data;
+    const colors =  allData.data; 
 
   return (
     <div className="p-6">

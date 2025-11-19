@@ -4,8 +4,8 @@ const notify = (msg, flag) => toast(msg, { type: flag ? "success" : "error" });
 import axios from "axios";
 
 const axioIsnstance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API__BASE_URL,
-});
+  baseURL: process.env.NEXT_PUBLIC_API__BASE_URL, 
+}); 
 
 function createSlug(text) {
   return text
