@@ -17,10 +17,10 @@ export default function ContentPage() {
         setOrders(response.data.data);
         let total = 0;
         response?.data?.data.map((order) => (total += order?.order_total));
-        setSales(total);
-      })
+        setSales(total); 
+      }) 
       .catch((error) => {
-        console.log(error);
+        console.log(error); 
       });
   }
   // get order
@@ -76,10 +76,7 @@ export default function ContentPage() {
             {formatIndianCurrency(sales)}{" "}
           </p>
         </div>
-        {/* <div className="bg-white shadow rounded-lg hover:scale-103 duration-150 p-5">
-          <h2 className="text-gray-600 text-sm">Revenue</h2>
-          <p className="text-2xl font-bold mt-2">$8,200</p>
-        </div> */}
+       
       </div>
       {/* sreaching option  */}
       <div>
@@ -116,16 +113,6 @@ export default function ContentPage() {
             {orders?.map((order, index) => (
               <tr key={index} className="border-b hover:bg-gray-50">
                 <td className="p-3">{order._id}</td>
-
-                {/* Product Image + Name */}
-                {/* <td className="p-3 flex items-center gap-3">
-                  <img
-                    src={order.productImg}
-                    alt={order.product}
-                    className="w-10 h-10 rounded-md object-cover"
-                  />
-                  <span>{order.product}</span>
-                </td> */}
 
                 {/* Customer Name */}
                 <td className="p-3">{order?.user_id?.name}</td>

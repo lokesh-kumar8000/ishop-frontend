@@ -45,12 +45,6 @@ export default function Sidebar() {
            <FaBox /> <span>Products</span>
           </Link>
         </li>
-        <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-100  cursor-pointer">
-          <FaChartPie /> <span>Analytics</span>
-        </li>
-        <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-100  cursor-pointer">
-          <FaCog /> <span>Settings</span>
-        </li>
       </ul>
     </div>
   );

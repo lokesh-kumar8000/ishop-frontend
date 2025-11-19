@@ -28,17 +28,6 @@
       "static/css/app/(website)/page.css",
       "static/chunks/app/(website)/page.js"
     ],
-    "/(website)/store/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(website)/store/layout.css",
-      "static/chunks/app/(website)/store/layout.js"
-    ],
-    "/(website)/store/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/store/page.js"
-    ],
     "/(admin-penal)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -50,16 +39,36 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(admin-penal)/admin/page.js"
     ],
-    "/admin-login/layout": [
+    "/(admin-penal)/admin/brand/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/admin-login/layout.css",
-      "static/chunks/app/admin-login/layout.js"
+      "static/chunks/app/(admin-penal)/admin/brand/page.js"
     ],
-    "/admin-login/page": [
+    "/(admin-penal)/admin/brand/add/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin-login/page.js"
+      "static/chunks/app/(admin-penal)/admin/brand/add/page.js"
+    ],
+    "/(admin-penal)/admin/category/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(admin-penal)/admin/category/page.js"
+    ],
+    "/(admin-penal)/admin/category/add/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(admin-penal)/admin/category/add/page.js"
+    ],
+    "/(website)/store/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(website)/store/layout.css",
+      "static/chunks/app/(website)/store/layout.js"
+    ],
+    "/(website)/store/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(website)/store/page.js"
     ]
   }
 }

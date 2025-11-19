@@ -1,7 +1,9 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/admin-login/page": "app/admin-login/page.js",
   "/(website)/page": "app/(website)/page.js",
-  "/(admin-penal)/admin/page": "app/(admin-penal)/admin/page.js",
+  "/(admin-penal)/admin/brand/add/page": "app/(admin-penal)/admin/brand/add/page.js",
+  "/(admin-penal)/admin/category/page": "app/(admin-penal)/admin/category/page.js",
+  "/(admin-penal)/admin/category/add/page": "app/(admin-penal)/admin/category/add/page.js",
+  "/(admin-penal)/admin/brand/page": "app/(admin-penal)/admin/brand/page.js",
   "/(website)/store/page": "app/(website)/store/page.js"
 }
