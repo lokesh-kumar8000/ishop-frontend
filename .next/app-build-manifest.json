@@ -28,16 +28,6 @@
       "static/css/app/(website)/page.css",
       "static/chunks/app/(website)/page.js"
     ],
-    "/(website)/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/about/page.js"
-    ],
-    "/(website)/profile-view/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/profile-view/page.js"
-    ],
     "/(website)/store/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -48,16 +38,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(website)/store/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
-    ],
-    "/(website)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(website)/contact/page.js"
     ],
     "/(admin-penal)/layout": [
       "static/chunks/webpack.js",
@@ -70,25 +50,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(admin-penal)/admin/page.js"
     ],
-    "/(admin-penal)/admin/category/page": [
+    "/admin-login/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(admin-penal)/admin/category/page.js"
+      "static/css/app/admin-login/layout.css",
+      "static/chunks/app/admin-login/layout.js"
     ],
-    "/(admin-penal)/admin/category/add/page": [
+    "/admin-login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(admin-penal)/admin/category/add/page.js"
-    ],
-    "/(admin-penal)/admin/color/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(admin-penal)/admin/color/page.js"
-    ],
-    "/(admin-penal)/admin/color/add/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(admin-penal)/admin/color/add/page.js"
+      "static/chunks/app/admin-login/page.js"
     ]
   }
 }

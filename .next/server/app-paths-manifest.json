@@ -1,7 +1,7 @@
 {
-  "/(admin-penal)/admin/color/add/page": "app/(admin-penal)/admin/color/add/page.js",
-  "/(admin-penal)/admin/color/page": "app/(admin-penal)/admin/color/page.js",
-  "/(admin-penal)/admin/category/page": "app/(admin-penal)/admin/category/page.js",
-  "/(admin-penal)/admin/category/add/page": "app/(admin-penal)/admin/category/add/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/admin-login/page": "app/admin-login/page.js",
+  "/(website)/page": "app/(website)/page.js",
+  "/(admin-penal)/admin/page": "app/(admin-penal)/admin/page.js",
   "/(website)/store/page": "app/(website)/store/page.js"
 }
