@@ -3,14 +3,14 @@ import React from "react";
 
 function middleware(req) {
   const { pathname } = req.nextUrl;
-  // console.log(req.nextUrl);
+  // console.log(req.nextUrl, "midleware");
   if (pathname.startsWith("/admin")) {
     const admin_token = req.cookies.get("admin_token");
     if (!admin_token) {
       return NextResponse.redirect(new URL("/admin-login", req.url));
     }
   }
-  return NextResponse.next(); 
+  return NextResponse.next();
 }
 
 export default middleware;
