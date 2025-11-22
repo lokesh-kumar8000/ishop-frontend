@@ -17,6 +17,7 @@ export default function AdminLogin() {
     axioIsnstance.post('admin/login',data, {withCredentials:true} ).then(
       (response)=>{
         if(response.data.success){
+           localStorage.setItem('admin_token', response.data.token);
           console.log(response.data);
           notify(response.data.message,response.data.success); 
           router.push('/admin')

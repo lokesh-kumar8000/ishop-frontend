@@ -10,6 +10,11 @@ export default function ContentPage() {
   const [products, setProducts] = useState([]);
   const [sales, setSales] = useState(0);
 
+  const token = localStorage.getItem("admin_token");
+  if (!token) {
+    router.push("/admin-login");
+  }
+
   function getOrder() {
     axioIsnstance
       .get(`order/get/${search}`)
@@ -17,10 +22,10 @@ export default function ContentPage() {
         setOrders(response.data.data);
         let total = 0;
         response?.data?.data.map((order) => (total += order?.order_total));
-        setSales(total); 
-      }) 
+        setSales(total);
+      })
       .catch((error) => {
-        console.log(error); 
+        console.log(error);
       });
   }
   // get order
@@ -76,7 +81,6 @@ export default function ContentPage() {
             {formatIndianCurrency(sales)}{" "}
           </p>
         </div>
-       
       </div>
       {/* sreaching option  */}
       <div>
