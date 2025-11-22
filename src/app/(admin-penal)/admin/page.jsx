@@ -1,19 +1,26 @@
 "use client";
 import { axioIsnstance, formatIndianCurrency } from "@/library/helper";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function ContentPage() {
   const [orders, setOrders] = useState([]);
+  const router = useRouter();
+
   const inputRef = useRef();
   const [search, setSearch] = useState("");
   const [users, setUsers] = useState([]);
   const [products, setProducts] = useState([]);
-  const [sales, setSales] = useState(0);
+  const [sales, setSales] = useState(0); 
+  const [isLoading, setIsLoading] = useState(true); 
 
-  const token = localStorage.getItem("admin_token");
-  if (!token) {
-    router.push("/admin-login");
-  }
+  useEffect(() => {
+    const token = localStorage.getItem("admin_token");
+    if (!token) {
+      router.push("/admin-login"); 
+    }
+    setIsLoading(false); 
+  }, [router]);
 
   function getOrder() {
     axioIsnstance
@@ -60,6 +67,8 @@ export default function ContentPage() {
     setSearch(inputRef.current.value);
     console.log("Search Value:", inputRef.current.value);
   }
+
+   if (isLoading) return <div>Loading...</div>;
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
