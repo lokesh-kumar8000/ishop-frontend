@@ -63,7 +63,6 @@ export default function CartPage({ products }) {
       axioIsnstance
         .patch(`cart/inc-to-dec/${productId}/${user._id}/${flag}`)
         .then((response) => {
-          // notify(response.data.message, response.data.success);
           console.log(response.data);
           dispatcher(
             incDec({
@@ -108,7 +107,7 @@ export default function CartPage({ products }) {
                   {/* Image + Tag */}
                   <div className="relative">
                     <img
-                      src={`${process.env.NEXT_PUBLIC_API__BASE_URL}/image/product/${product.thumbnail}`}
+                      src={`${process.env.NEXT_PUBLIC_API__BASE_URL}/image/product/${product?.thumbnail}`}
                       alt={product.name}
                       className="w-24 h-28 object-contain rounded-lg"
                     />
@@ -119,10 +118,10 @@ export default function CartPage({ products }) {
                     <div className=" flex justify-between items-center ">
                       <div>
                         <h3 className="font-semibold text-sm text-gray-700">
-                          {product.name}
+                          {product?.name}
                         </h3>
                         <p className="text-red-600 font-bold text-lg">
-                          {formatIndianCurrency(product.finalPrice * item.qty)}
+                          {formatIndianCurrency(product?.finalPrice * item.qty)}
                         </p>
                         {/* Quantity */}
                         <div className="flex items-center gap-2 mt-2">
@@ -130,9 +129,9 @@ export default function CartPage({ products }) {
                             onClick={() =>
                               updateCart({
                                 flag: "-",
-                                productId: product._id,
-                                original_total: product.originalPrice,
-                                final_total: product.finalPrice,
+                                productId: product?._id,
+                                original_total: product?.originalPrice,
+                                final_total: product?.finalPrice,
                               })
                             }
                             className="w-7 h-7 flex items-center justify-center border rounded-md hover:bg-gray-100"
